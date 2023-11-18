@@ -1,11 +1,18 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
-export default function Regulamento() {
+//import { Button } from "native-base";
+
+export default function Regulamento({ navigation }) {
   return (
     <View style={styles.container}>
       <Text>Regulamento</Text>
+      <Button
+        onPress={() => navigation.navigate("Feedback")}
+        title="Learn More"
+        color="#841584"
+      />
     </View>
   );
 }
