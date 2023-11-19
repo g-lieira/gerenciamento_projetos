@@ -1,13 +1,20 @@
-const styles = StyleSheet.create({
+import { StyleSheet, View, Image, TouchableOpacity, Text } from "react-native";
+
+export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
-    gap: 50,
+    gap: 20,
+  },
+
+  image: {
+    marginBottom: 20,
   },
 
   button: {
+    width: 250,    
     backgroundColor: '#FFE542',
     borderRadius: 50,
     paddingVertical: 16,
@@ -18,7 +25,12 @@ const styles = StyleSheet.create({
   },
 
   buttonText: {
-    color: "#000",
+    color: "#433C11",
     fontSize: 20,
   },
+
+  smallText: {
+    fontSize: 20,
+    color: '#9B9D99',
+  }
 });
