@@ -2,8 +2,6 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
-//import { Button } from "native-base";
-
 export default function Regulamento({ navigation }) {
   return (
     <View style={styles.container}>
