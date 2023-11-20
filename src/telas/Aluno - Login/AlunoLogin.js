@@ -1,13 +1,11 @@
 import React from "react";
 import { View, Image, TouchableOpacity, TextInput, Text } from "react-native";
-import { AntDesign , EvilIcons } from "@expo/vector-icons";
+import { AntDesign, EvilIcons } from "@expo/vector-icons";
 
 import { styles } from "./style";
 import Logo from "./../../../assets/logo.png";
 
 export default function AlunoLogin({ navigation }) {
-  const [text, onChangeText] = React.useState("");
-
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -23,7 +21,7 @@ export default function AlunoLogin({ navigation }) {
             <Text>RA</Text>
           </View>
           <View style={styles.inputContainer}>
-            <TextInput />
+            <TextInput keyboardType="numeric" />
           </View>
         </View>
 
@@ -35,6 +33,16 @@ export default function AlunoLogin({ navigation }) {
             <EvilIcons name="lock" size={24} color="black" />
             <TextInput secureTextEntry={true} placeholder="******" />
           </View>
+        </View>
+
+        <View>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => navigation.navigate("Feedback")}
+            title="Aluno"
+          >
+            <Text style={styles.buttonText}>Entrar</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </View>

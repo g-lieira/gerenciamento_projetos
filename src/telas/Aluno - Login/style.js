@@ -50,4 +50,21 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     gap: 5,
   },
+
+  button: {
+    width: '70%',    
+    backgroundColor: '#FFE542',
+    borderRadius: 50,
+    paddingVertical: 16,
+    paddingHorizontal: 70,
+    elevation: 3,
+    alignItems: "center",
+    justifyContent: "center",
+    alignSelf: 'center',
+  },
+
+  buttonText: {
+    color: "#433C11",
+    fontSize: 20,
+  },
 });
