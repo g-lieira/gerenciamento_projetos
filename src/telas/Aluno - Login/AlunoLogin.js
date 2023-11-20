@@ -38,7 +38,7 @@ export default function AlunoLogin({ navigation }) {
         <View>
           <TouchableOpacity
             style={styles.button}
-            onPress={() => navigation.navigate("Feedback")}
+            onPress={() => navigation.navigate("AlunoHome")}
             title="Aluno"
           >
             <Text style={styles.buttonText}>Entrar</Text>
