@@ -1,6 +1,5 @@
 import React from "react";
-import { NavigationContainer } from "@react-navigation/native";
-import { StyleSheet, View, Image, TouchableOpacity, Text } from "react-native";
+import { View, Image, TouchableOpacity, Text } from "react-native";
 
 import {styles} from './style';
 import Logo from "../../../assets/logo.png";

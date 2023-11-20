@@ -1,6 +1,5 @@
 import React from "react";
-import { NavigationContainer } from "@react-navigation/native";
-import { StyleSheet, View, Image, TouchableOpacity, Text } from "react-native";
+import { View, Image, TouchableOpacity, Text } from "react-native";
 
 import {styles} from './style';
 import Logo from "../../../assets/logo.png";
@@ -12,7 +11,7 @@ export default function EntrarEscolha({ navigation }) {
       <Text style={styles.smallText}>Entrar como:</Text>
       <TouchableOpacity
         style={styles.button}
-        onPress={() => navigation.navigate("Regulamento")}
+        onPress={() => navigation.navigate("AlunoLogin")}
         title="Aluno"
       >
         <Text style={styles.buttonText}>Aluno</Text>
