@@ -38,5 +38,38 @@ export const styles = StyleSheet.create({
     fontSize: 20,
     fontFamily: 'Nova-Round',
     color: '#4D4D4D',
+  },
+
+  banner: {
+    width: 390,
+    height: 150,
+  },
+
+  reservaBox: {
+    flex: 1,
+    width: '100%',
+    paddingHorizontal: 30,
+    gap: 20,
+  },
+
+  title: {
+    width: '100%',
+    fontSize: 28,
+    fontFamily: 'Odibee-Sans',
+  },
+
+  quadras: {
+    gap: 10,
+  },  
+
+  logoUTF: {
+    width: 100,
+    height: 69,
+  },
+
+  quadraText: {
+    fontSize: 15,
+    width: 120,
+    color: '#4D4D4D',
   }
 });
