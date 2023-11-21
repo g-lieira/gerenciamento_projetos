@@ -69,7 +69,50 @@ export const styles = StyleSheet.create({
 
   quadraText: {
     fontSize: 15,
+    fontWeight: "500",
     width: 120,
     color: '#4D4D4D',
+    fontFamily: 'Nova-Round',
+  },
+
+  reservas: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 5,
+    backgroundColor: '#E3E3E3',
+    width: 150,
+    paddingVertical: 20,
+    borderRadius: 10,
+    marginTop: 10,
+  },
+  
+  reservasText: {
+    fontSize: 15,
+    fontWeight: "500",
+    color: '#4D4D4D',
+    fontFamily: 'Nova-Round',
+  },
+
+  navButton: {
+    display: 'flex',
+    flexDirection: 'row',
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 5,
+  },
+
+  navButtonBox: {
+    width: '40%',
+    paddingHorizontal: 30,
+  },  
+
+  navButtonText: {
+    color: '#FFDF12',
+    fontSize: 15,
+    fontFamily: 'Nova-Round',
+    textAlign: 'center'
   }
 });

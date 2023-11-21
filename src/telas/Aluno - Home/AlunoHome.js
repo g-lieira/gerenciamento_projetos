@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Image, TouchableOpacity, TextInput, Text } from "react-native";
-import { AntDesign, Ionicons } from "@expo/vector-icons";
+import { AntDesign, Ionicons, MaterialCommunityIcons, Entypo  } from "@expo/vector-icons";
 
 import { styles } from "./style";
 import Logo from "./../../../assets/logo.png";
@@ -31,6 +31,31 @@ export default function AlunoHome({ navigation }) {
           <Image style={styles.logoUTF} source={LogoUTF}/>
           <Text style={styles.quadraText}>Quadra Poliesportiva UTFPR-CP</Text>
         </TouchableOpacity>
+
+        <Text style={{color: "#F1F1F1"}}>____________________________________________________________________</Text>
+
+        <TouchableOpacity style={styles.reservas}>
+          <MaterialCommunityIcons name="calendar-month-outline" size={24} color="#292D32" />
+          <Text style={styles.reservasText}>Minhas reservas</Text>
+        </TouchableOpacity>
+
+        <Text style={{color: "#F1F1F1", marginTop: 100}}>____________________________________________________________________</Text>
+
+        <View style={styles.navButton}>
+          <TouchableOpacity 
+            style={styles.navButtonBox}
+            onPress={() => navigation.navigate("Regulamento")}
+          >
+            <Text style={styles.navButtonText}>Regulamento</Text>
+          </TouchableOpacity>
+          <Entypo name="dot-single" size={24} color="#FFDF12" />
+          <TouchableOpacity 
+            style={styles.navButtonBox}
+            onPress={() => navigation.navigate("Feedback")}
+            >
+            <Text style={styles.navButtonText}>Feedback</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
