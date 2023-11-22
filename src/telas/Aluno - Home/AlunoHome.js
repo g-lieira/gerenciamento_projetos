@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Image, TouchableOpacity, Text, Button } from "react-native";
+import { View, Image, TouchableOpacity, Text } from "react-native";
 import {
   AntDesign,
   Ionicons,
@@ -33,6 +33,8 @@ export default function AlunoHome({ navigation }) {
       </View>
 
       <Modal 
+        animationIn={"fadeIn"}
+        animationOut={"fadeOut"}
         style={styles.modalBox} 
         isVisible={isModalVisible} 
         onBackdropPress={toggleModal}
