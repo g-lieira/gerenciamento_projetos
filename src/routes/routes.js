@@ -17,6 +17,7 @@ export default function Routes() {
         initialRouteName="Entrar"
         screenOptions={{
           headerShown: false,
+          animation: 'fade', 
         }}
       >
         <Stack.Screen name="Entrar" component={Entrar} />
