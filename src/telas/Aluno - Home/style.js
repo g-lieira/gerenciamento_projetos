@@ -24,6 +24,34 @@ export const styles = StyleSheet.create({
     height: 50,
   },
 
+  modalBox: {
+    width: 200,
+    position: 'absolute',
+    display: 'flex',
+    alignSelf: 'flex-end',
+    marginTop: 100,
+  },
+
+  modal: {
+    backgroundColor: '#F3F3F3',
+    marginRight: 30,
+    borderRadius: 20,
+    padding: 20,
+    gap: 20,
+  }, 
+
+  modalContent: {
+    display: 'flex',
+    flexDirection: 'row',
+    gap: 10,
+    alignItems: 'center',
+  },
+
+  modalText: {
+    fontSize: 18,
+    fontFamily: 'Nova-Round',
+  },
+
   local: {
     display: 'flex',
     flexDirection: 'row',
