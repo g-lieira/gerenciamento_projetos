@@ -1,7 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Regulamento from '../telas/Regulamento';
+import Regulamento from '../telas/Aluno - Regulamento/Regulamento';
 import Feedback from '../telas/Feedback';
 import Entrar from '../telas/Entrar/Entrar';
 import EntrarEscolha from '../telas/Entrar/EntrarEscolha';
