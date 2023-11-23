@@ -1,11 +1,9 @@
-import { StyleSheet, View, Image, TouchableOpacity, Text } from "react-native";
+import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
-    gap: 20,
   },
 
   header: {
@@ -73,10 +71,15 @@ export const styles = StyleSheet.create({
     textAlign: 'center'
   },
 
+  reservas: {
+    flex: 1,
+
+  },
+
   reservasBox: {
     borderColor: '#BBBBBB',
     borderBottomWidth: 1,
-    padding: 20
+    padding: 20,
   }, 
 
   quadraName: {
@@ -124,4 +127,35 @@ export const styles = StyleSheet.create({
     color: '#00B828',
     fontWeight: 'bold',
   },
+
+  navBox: {
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    paddingVertical: 20,
+    gap: 10,
+  },
+
+  navButton: {
+    display: 'flex',
+    flexDirection: 'row',
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 5,
+  },
+
+  navButtonBox: {
+    width: '40%',
+    paddingHorizontal: 30,
+  },  
+
+  navButtonText: {
+    color: '#FFDF12',
+    fontSize: 15,
+    fontFamily: 'Nova-Round',
+    textAlign: 'center'
+  }
 });

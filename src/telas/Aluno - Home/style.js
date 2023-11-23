@@ -1,4 +1,4 @@
-import { StyleSheet, View, Image, TouchableOpacity, Text } from "react-native";
+import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
@@ -123,11 +123,21 @@ export const styles = StyleSheet.create({
     fontFamily: 'Nova-Round',
   },
 
+  navBox: {
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    paddingVertical: 20,
+    gap: 10,
+  },
+
   navButton: {
     display: 'flex',
     flexDirection: 'row',
     width: '100%',
-    alignItems: 'center',
+    alignItems: 'baseline',
     justifyContent: 'center',
     gap: 5,
   },

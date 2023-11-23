@@ -6,7 +6,7 @@ import {
   MaterialCommunityIcons,
   Entypo,
   MaterialIcons,
-  FontAwesome
+  FontAwesome,
 } from "@expo/vector-icons";
 import Modal from "react-native-modal";
 
@@ -32,20 +32,26 @@ export default function AlunoHome({ navigation }) {
         </TouchableOpacity>
       </View>
 
-      <Modal 
+      <Modal
         animationIn={"fadeIn"}
         animationOut={"fadeOut"}
-        style={styles.modalBox} 
-        isVisible={isModalVisible} 
+        style={styles.modalBox}
+        isVisible={isModalVisible}
         onBackdropPress={toggleModal}
       >
         <View style={styles.modal}>
-          <TouchableOpacity onPress={() => navigation.navigate("AlunoHome")} style={styles.modalContent}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("AlunoHome")}
+            style={styles.modalContent}
+          >
             <FontAwesome name="user-circle" size={24} color="black" />
             <Text style={styles.modalText}>Aluno</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity onPress={() => navigation.navigate("Entrar")} style={styles.modalContent}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("Entrar")}
+            style={styles.modalContent}
+          >
             <MaterialIcons name="logout" size={28} color="black" />
             <Text style={styles.modalText}>Sair</Text>
           </TouchableOpacity>
@@ -71,7 +77,10 @@ export default function AlunoHome({ navigation }) {
           ____________________________________________________________________
         </Text>
 
-        <TouchableOpacity onPress={() => navigation.navigate("AlunoMinhasReservas")} style={styles.reservas}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("AlunoMinhasReservas")}
+          style={styles.reservas}
+        >
           <MaterialCommunityIcons
             name="calendar-month-outline"
             size={24}
@@ -80,25 +89,28 @@ export default function AlunoHome({ navigation }) {
           <Text style={styles.reservasText}>Minhas reservas</Text>
         </TouchableOpacity>
 
-        <Text style={{ color: "#F1F1F1", marginTop: 100 }}>
-          ____________________________________________________________________
-        </Text>
+        <View style={styles.navBox}>
+          <Text style={{ color: "#F1F1F1" }}>
+            ____________________________________________________________________
+          </Text>
 
-        <View style={styles.navButton}>
-          <TouchableOpacity
-            style={styles.navButtonBox}
-            onPress={() => navigation.navigate("Regulamento")}
-          >
-            <Text style={styles.navButtonText}>Regulamento</Text>
-          </TouchableOpacity>
-          <Entypo name="dot-single" size={24} color="#FFDF12" />
-          <TouchableOpacity
-            style={styles.navButtonBox}
-            onPress={() => navigation.navigate("Feedback")}
-          >
-            <Text style={styles.navButtonText}>Feedback</Text>
-          </TouchableOpacity>
+          <View style={styles.navButton}>
+            <TouchableOpacity
+              style={styles.navButtonBox}
+              onPress={() => navigation.navigate("Regulamento")}
+            >
+              <Text style={styles.navButtonText}>Regulamento</Text>
+            </TouchableOpacity>
+            <Entypo name="dot-single" size={24} color="#FFDF12" />
+            <TouchableOpacity
+              style={styles.navButtonBox}
+              onPress={() => navigation.navigate("Feedback")}
+            >
+              <Text style={styles.navButtonText}>Feedback</Text>
+            </TouchableOpacity>
+          </View>
         </View>
+
       </View>
     </View>
   );

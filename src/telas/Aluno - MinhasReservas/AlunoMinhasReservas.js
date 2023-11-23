@@ -5,6 +5,7 @@ import {
   MaterialIcons,
   FontAwesome,
   MaterialCommunityIcons,
+  Entypo,
 } from "@expo/vector-icons";
 import Modal from "react-native-modal";
 
@@ -21,7 +22,7 @@ export default function AlunoMinhasReservas({ navigation }) {
   };
 
   return (
-    <View>
+    <View style={styles.container}>
       <View style={styles.header}>
         <Image source={Logo} style={styles.logo} />
 
@@ -63,59 +64,83 @@ export default function AlunoMinhasReservas({ navigation }) {
         <Text style={styles.navHeaderText}>Reservas</Text>
       </View>
 
-      <View style={styles.reservasBox}>
-        <View>
-          <Text style={styles.quadraName}>
-            Quadra Poliesportiva - Câmpus CP
-          </Text>
-        </View>
+      <View style={styles.reservas}>
+        <View style={styles.reservasBox}>
+          <View>
+            <Text style={styles.quadraName}>
+              Quadra Poliesportiva - Câmpus CP
+            </Text>
+          </View>
 
-        <View style={styles.quadraInfos}>
-          <View style={styles.quadraDate}>
-            <View style={styles.quadraDateItem}>
-              <MaterialCommunityIcons
-                name="calendar-month-outline"
-                size={30}
-                color="#292D32"
-              />
-              <Text style={styles.quadraDateText}>02/12</Text>
+          <View style={styles.quadraInfos}>
+            <View style={styles.quadraDate}>
+              <View style={styles.quadraDateItem}>
+                <MaterialCommunityIcons
+                  name="calendar-month-outline"
+                  size={30}
+                  color="#292D32"
+                />
+                <Text style={styles.quadraDateText}>02/12</Text>
+              </View>
+              <View style={styles.quadraDateItem}>
+                <AntDesign name="clockcircleo" size={25} color="black" />
+                <Text style={styles.quadraDateText}>10:00</Text>
+              </View>
             </View>
-            <View style={styles.quadraDateItem}>
-              <AntDesign name="clockcircleo" size={25} color="black" />
-              <Text style={styles.quadraDateText}>10:00</Text>
+            <View>
+              <Text style={styles.statusReservado}>Reservado</Text>
             </View>
           </View>
+        </View>
+
+        <View style={styles.reservasBox}>
           <View>
-            <Text style={styles.statusReservado}>Reservado</Text>
+            <Text style={styles.quadraName}>
+              Quadra Poliesportiva - Câmpus CP
+            </Text>
+          </View>
+
+          <View style={styles.quadraInfos}>
+            <View style={styles.quadraDate}>
+              <View style={styles.quadraDateItem}>
+                <MaterialCommunityIcons
+                  name="calendar-month-outline"
+                  size={30}
+                  color="#292D32"
+                />
+                <Text style={styles.quadraDateText}>04/12</Text>
+              </View>
+              <View style={styles.quadraDateItem}>
+                <AntDesign name="clockcircleo" size={25} color="black" />
+                <Text style={styles.quadraDateText}>14:00</Text>
+              </View>
+            </View>
+            <View>
+              <Text style={styles.statusSolicitado}>Solicitado</Text>
+            </View>
           </View>
         </View>
       </View>
 
-      <View style={styles.reservasBox}>
-        <View>
-          <Text style={styles.quadraName}>
-            Quadra Poliesportiva - Câmpus CP
-          </Text>
-        </View>
+      <View style={styles.navBox}>
+        <Text style={{ color: "#F1F1F1" }}>
+          ____________________________________________________________________
+        </Text>
 
-        <View style={styles.quadraInfos}>
-          <View style={styles.quadraDate}>
-            <View style={styles.quadraDateItem}>
-              <MaterialCommunityIcons
-                name="calendar-month-outline"
-                size={30}
-                color="#292D32"
-              />
-              <Text style={styles.quadraDateText}>04/12</Text>
-            </View>
-            <View style={styles.quadraDateItem}>
-              <AntDesign name="clockcircleo" size={25} color="black" />
-              <Text style={styles.quadraDateText}>14:00</Text>
-            </View>
-          </View>
-          <View>
-            <Text style={styles.statusSolicitado}>Solicitado</Text>
-          </View>
+        <View style={styles.navButton}>
+          <TouchableOpacity
+            style={styles.navButtonBox}
+            onPress={() => navigation.navigate("Regulamento")}
+          >
+            <Text style={styles.navButtonText}>Regulamento</Text>
+          </TouchableOpacity>
+          <Entypo name="dot-single" size={24} color="#FFDF12" />
+          <TouchableOpacity
+            style={styles.navButtonBox}
+            onPress={() => navigation.navigate("Feedback")}
+          >
+            <Text style={styles.navButtonText}>Feedback</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </View>
