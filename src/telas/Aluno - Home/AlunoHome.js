@@ -71,7 +71,7 @@ export default function AlunoHome({ navigation }) {
           ____________________________________________________________________
         </Text>
 
-        <TouchableOpacity style={styles.reservas}>
+        <TouchableOpacity onPress={() => navigation.navigate("AlunoMinhasReservas")} style={styles.reservas}>
           <MaterialCommunityIcons
             name="calendar-month-outline"
             size={24}

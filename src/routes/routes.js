@@ -7,6 +7,7 @@ import Entrar from '../telas/Entrar/Entrar';
 import EntrarEscolha from '../telas/Entrar/EntrarEscolha';
 import AlunoLogin from '../telas/Aluno - Login/AlunoLogin';
 import AlunoHome from '../telas/Aluno - Home/AlunoHome';
+import AlunoMinhasReservas from '../telas/Aluno - MinhasReservas/AlunoMinhasReservas';
 
 const Stack = createNativeStackNavigator();
 
@@ -24,6 +25,7 @@ export default function Routes() {
         <Stack.Screen name="EntrarEscolha" component={EntrarEscolha} />
         <Stack.Screen name="AlunoLogin" component={AlunoLogin} />
         <Stack.Screen name="AlunoHome" component={AlunoHome} />
+        <Stack.Screen name="AlunoMinhasReservas" component={AlunoMinhasReservas} />
 
 
         <Stack.Screen name="Regulamento" component={Regulamento} />
