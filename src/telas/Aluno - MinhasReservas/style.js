@@ -59,7 +59,7 @@ export const styles = StyleSheet.create({
     gap: 36,
     paddingTop: 30,
     paddingLeft: 30,
-    paddingBottom: 30,
+    paddingBottom: 20,
     borderColor: '#BBBBBB',
     borderBottomWidth: 1,
   },
@@ -68,7 +68,6 @@ export const styles = StyleSheet.create({
     fontSize: 40,
     fontFamily: 'Odibee-Sans',
     width: '60%',
-    textAlign: 'center'
   },
 
   reservas: {
