@@ -19,7 +19,7 @@ export default function EntrarEscolha({ navigation }) {
 
       <TouchableOpacity
         style={styles.button}
-        onPress={() => navigation.navigate("Regulamento")}
+        onPress={() => navigation.navigate("AdminLogin")}
         title="Administrador"
       >
         <Text style={styles.buttonText}>Administrador</Text>
