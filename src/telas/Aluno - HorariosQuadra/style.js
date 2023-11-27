@@ -49,5 +49,57 @@ export const styles = StyleSheet.create({
     fontFamily: 'Odibee-Sans',
     fontSize: 28,
     padding: 20,
-  }
+  },
+
+  horariosDiponiveis: {
+    paddingTop: 310,
+    width: '100%',
+    gap: 20,
+  },
+
+  horariosDiponiveisText: {
+    color: '#000',
+    fontFamily: 'Odibee-Sans',
+    fontSize: 28,
+    paddingHorizontal: 20,
+  },
+
+  datas: {
+    backgroundColor: '#F1F1F1',
+    width: '100%',
+    height: 50,
+    display: 'flex',
+    flexDirection: 'row',
+    paddingHorizontal: 20,
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+
+  dataItem: {
+    fontSize: 15,
+    paddingHorizontal: 10,
+    paddingVertical: 8,
+    borderRadius: 15,
+  },
+
+  dataText: {
+    fontSize: 15,
+    fontFamily: 'Nova-Round',
+    color: '#000',
+  },
+
+  horarios: {
+    display: 'flex',
+    flexDirection: 'row',
+    paddingHorizontal: 20,
+  },
+
+  timeItem: {
+    fontSize: 15,
+    paddingHorizontal: 20,
+    paddingVertical: 15,
+    borderRadius: 10,
+    backgroundColor: '#FBF0A1',
+    marginHorizontal: 10,
+  },
 });
