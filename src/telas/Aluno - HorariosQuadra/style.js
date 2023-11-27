@@ -99,7 +99,28 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 15,
     borderRadius: 10,
-    backgroundColor: '#FBF0A1',
+    backgroundColor: '#FFF7BA',
     marginHorizontal: 10,
   },
+
+  buttonBox: {
+    width: '100%',
+    height: 200,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+  },
+
+  button: {
+    backgroundColor: '#D7D7D6',
+    paddingVertical: 20,
+    paddingHorizontal: 40,
+    borderRadius: 10,
+  },
+
+  buttonText: {
+    fontSize: 25,
+    fontFamily: 'Odibee-Sans',
+    letterSpacing: 2,
+  }
 });
