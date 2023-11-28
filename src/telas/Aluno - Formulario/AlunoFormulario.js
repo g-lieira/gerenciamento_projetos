@@ -3,14 +3,9 @@ import { useRoute } from "@react-navigation/native";
 import { View, TouchableOpacity, Text, TextInput } from "react-native";
 import {
   AntDesign,
-  MaterialIcons,
-  FontAwesome,
-  MaterialCommunityIcons,
-  Entypo,
 } from "@expo/vector-icons";
 
 import { styles } from "./style";
-import BannerQuadra from "./../../../assets/bannerQuadra.png";
 
 export default function AlunoFormulario({ navigation }) {
   const route = useRoute();
@@ -76,7 +71,7 @@ export default function AlunoFormulario({ navigation }) {
 
         <View style={styles.buttonBox}>
           <TouchableOpacity
-            onPress={() => navigation.navigate("Feedback")}
+            onPress={() => navigation.navigate("AlunoEnvioSucesso")}
             style={styles.button}
           >
             <Text style={styles.buttonText}>Solicitar</Text>
