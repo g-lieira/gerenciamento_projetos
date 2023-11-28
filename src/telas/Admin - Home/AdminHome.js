@@ -16,7 +16,7 @@ import Banner from "../../../assets/banner.png";
 import LogoUTF from "../../../assets/logoUTF.png";
 import IconPlus from "../../../assets/iconPlus.png"
 
-export default function AlunoHome({ navigation }) {
+export default function AdminHome({ navigation }) {
   const [isModalVisible, setModalVisible] = useState(false);
 
   const toggleModal = () => {
@@ -42,11 +42,11 @@ export default function AlunoHome({ navigation }) {
       >
         <View style={styles.modal}>
           <TouchableOpacity
-            onPress={() => navigation.navigate("AlunoHome")}
+            onPress={() => navigation.navigate("AdminHome")}
             style={styles.modalContent}
           >
             <FontAwesome name="user-circle" size={24} color="black" />
-            <Text style={styles.modalText}>Aluno</Text>
+            <Text style={styles.modalText}>Admin</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -69,22 +69,29 @@ export default function AlunoHome({ navigation }) {
       <View style={styles.reservaBox}>
         <Text style={styles.title}>QUADRAS DISPONÍVEIS</Text>
 
-        <TouchableOpacity style={styles.quadras}>
-          <Image style={styles.logoUTF} source={LogoUTF} />
-          <Text style={styles.quadraText}>Quadra Poliesportiva UTFPR-CP</Text>
-        </TouchableOpacity>
 
-        <TouchableOpacity> 
-            <Image style={styles.iconPlus} source={IconPlus}/>
-            <Text style={styles.quadraText}>Adicionar quadra</Text>
-        </TouchableOpacity>
+        <View style={styles.quadrasBox}>
+          <TouchableOpacity style={styles.quadras}>
+            <Image style={styles.logoUTF} source={LogoUTF} />
+            <Text style={styles.quadraText}>Quadra Poliesportiva UTFPR-CP</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity 
+            style={styles.quadrasAdd}
+            onPress={() => navigation.navigate("AdminAdicionarQuadra")}
+          > 
+              <Image style={styles.iconPlus} source={IconPlus}/>
+              <Text style={styles.quadraText}>Adicionar quadra</Text>
+          </TouchableOpacity>
+        </View>
+        
         
         <Text style={{ color: "#F1F1F1" }}>
           ____________________________________________________________________
         </Text>
 
         <TouchableOpacity
-          onPress={() => navigation.navigate("AlunoMinhasReservas")}
+          onPress={() => navigation.navigate("AdminReservasPendentes")}
           style={styles.reservas}
         >
           <MaterialCommunityIcons

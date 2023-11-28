@@ -107,6 +107,22 @@ export const styles = StyleSheet.create({
     fontFamily: 'Nova-Round',
   },
 
+  quadrasBox: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    width: '100%',
+    justifyContent: 'center',
+    gap: 82,
+  },
+
+  quadrasAdd: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+  },
+
   reservas: {
     display: 'flex',
     flexDirection: 'row',
