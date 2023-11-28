@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import { View, Image, TouchableOpacity, Text, ScrollView } from "react-native";
 import {
   AntDesign,
-  MaterialIcons,
-  FontAwesome,
-  MaterialCommunityIcons,
-  Entypo,
 } from "@expo/vector-icons";
 
 import { styles } from "./style";
@@ -160,7 +156,12 @@ export default function AlunoHorariosQuadra({ navigation }) {
       </View>
 
       <View style={styles.buttonBox}>
-        <TouchableOpacity onPress={()=> navigation.navigate("Feedback")} style={styles.button}>
+        <TouchableOpacity 
+          onPress={()=> navigation.navigate(
+            "AlunoFormulario", 
+            { date: selectedDate, time: selectedTime}
+          )} 
+          style={styles.button}>
           <Text style={styles.buttonText}>Preencher formulário</Text>
         </TouchableOpacity>
       </View>

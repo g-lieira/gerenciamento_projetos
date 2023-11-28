@@ -9,6 +9,7 @@ import AlunoLogin from '../telas/Aluno - Login/AlunoLogin';
 import AlunoHome from '../telas/Aluno - Home/AlunoHome';
 import AlunoMinhasReservas from '../telas/Aluno - MinhasReservas/AlunoMinhasReservas';
 import AlunoHorariosQuadra from '../telas/Aluno - HorariosQuadra/AlunoHorariosQuadra';
+import AlunoFormulario from '../telas/Aluno - Formulario/AlunoFormulario';
 
 const Stack = createNativeStackNavigator();
 
@@ -28,6 +29,7 @@ export default function Routes() {
         <Stack.Screen name="AlunoHome" component={AlunoHome} />
         <Stack.Screen name="AlunoMinhasReservas" component={AlunoMinhasReservas} />
         <Stack.Screen name="AlunoHorariosQuadra" component={AlunoHorariosQuadra} />
+        <Stack.Screen name="AlunoFormulario" component={AlunoFormulario} />
 
 
         <Stack.Screen name="Regulamento" component={Regulamento} />
