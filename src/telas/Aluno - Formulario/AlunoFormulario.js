@@ -16,7 +16,7 @@ export default function AlunoFormulario({ navigation }) {
   const route = useRoute();
   const { date, time } = route.params;
 
-  const [texto, setTexto] = useState('');
+  const [texto, setTexto] = useState("");
 
   const handleChange = (event) => {
     setTexto(event.target.value);
@@ -51,13 +51,13 @@ export default function AlunoFormulario({ navigation }) {
             <View style={styles.formItem}>
               <Text style={styles.formLabel}>Horário</Text>
               <View style={styles.formInputDataHora}>
-                <TextInput value={ time } />
+                <TextInput value={time} />
               </View>
             </View>
             <View style={styles.formItem}>
               <Text style={styles.formLabel}>Dia</Text>
               <View style={styles.formInputDataHora}>
-                <TextInput value={ date } />
+                <TextInput value={date} />
               </View>
             </View>
           </View>
@@ -66,8 +66,21 @@ export default function AlunoFormulario({ navigation }) {
         <View style={styles.formItem}>
           <Text style={styles.formLabel}>Justificativa</Text>
           <View style={styles.formTextArea}>
-            <TextInput style={styles.formTextAreaInput} value={texto} onChange={handleChange} />
+            <TextInput
+              style={styles.formTextAreaInput}
+              value={texto}
+              onChange={handleChange}
+            />
           </View>
+        </View>
+
+        <View style={styles.buttonBox}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("Feedback")}
+            style={styles.button}
+          >
+            <Text style={styles.buttonText}>Solicitar</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </View>

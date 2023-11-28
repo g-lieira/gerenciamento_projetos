@@ -82,4 +82,25 @@ export const styles = StyleSheet.create({
     textAlign: 'left',
     gap: 5,
   },
+
+  buttonBox: {
+    width: '100%',
+    height: 100,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+  },
+
+  button: {
+    backgroundColor: '#D7D7D6',
+    paddingVertical: 15,
+    paddingHorizontal: 80,
+    borderRadius: 10,
+  },
+
+  buttonText: {
+    fontSize: 25,
+    fontFamily: 'Odibee-Sans',
+    letterSpacing: 2,
+  }
 });
