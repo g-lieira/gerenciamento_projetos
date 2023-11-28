@@ -68,7 +68,7 @@ export default function AlunoHome({ navigation }) {
       <View style={styles.reservaBox}>
         <Text style={styles.title}>QUADRAS DISPONÍVEIS</Text>
 
-        <TouchableOpacity style={styles.quadras}>
+        <TouchableOpacity onPress={()=> navigation.navigate("AlunoHorariosQuadra")} style={styles.quadras}>
           <Image style={styles.logoUTF} source={LogoUTF} />
           <Text style={styles.quadraText}>Quadra Poliesportiva UTFPR-CP</Text>
         </TouchableOpacity>

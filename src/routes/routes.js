@@ -8,6 +8,9 @@ import EntrarEscolha from '../telas/Entrar/EntrarEscolha';
 import AlunoLogin from '../telas/Aluno - Login/AlunoLogin';
 import AlunoHome from '../telas/Aluno - Home/AlunoHome';
 import AlunoMinhasReservas from '../telas/Aluno - MinhasReservas/AlunoMinhasReservas';
+import AlunoHorariosQuadra from '../telas/Aluno - HorariosQuadra/AlunoHorariosQuadra';
+import AlunoFormulario from '../telas/Aluno - Formulario/AlunoFormulario';
+import AlunoEnvioSucesso from '../telas/Aluno - EnvioSucesso/AlunoEnvioSucesso';
 import AdminLogin from '../telas/Admin - Login/AdminLogin';
 import AdminHome from '../telas/Admin - Home/AdminHome';
 
@@ -28,6 +31,10 @@ export default function Routes() {
         <Stack.Screen name="AlunoLogin" component={AlunoLogin} />
         <Stack.Screen name="AlunoHome" component={AlunoHome} />
         <Stack.Screen name="AlunoMinhasReservas" component={AlunoMinhasReservas} />
+        <Stack.Screen name="AlunoHorariosQuadra" component={AlunoHorariosQuadra} />
+        <Stack.Screen name="AlunoFormulario" component={AlunoFormulario} />
+        <Stack.Screen name="AlunoEnvioSucesso" component={AlunoEnvioSucesso} />
+
         <Stack.Screen name="AdminLogin" component={AdminLogin} />
         <Stack.Screen name="AdminHome" component={AdminHome} /> 
 
