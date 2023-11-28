@@ -122,5 +122,19 @@ export const styles = StyleSheet.create({
     fontSize: 25,
     fontFamily: 'Odibee-Sans',
     letterSpacing: 2,
-  }
+  },
+
+  disabledButton: {
+    backgroundColor: '#E9E9E8',
+    paddingVertical: 20,
+    paddingHorizontal: 40,
+    borderRadius: 10,
+  },
+
+  disabledButtonText: {
+    fontSize: 25,
+    fontFamily: 'Odibee-Sans',
+    letterSpacing: 2,
+    color: '#A5A5A5',
+  },
 });

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { View, Image, TouchableOpacity, Text, ScrollView } from "react-native";
-import {
-  AntDesign,
-} from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
 
 import { styles } from "./style";
 import BannerQuadra from "./../../../assets/bannerQuadra.png";
@@ -156,14 +154,23 @@ export default function AlunoHorariosQuadra({ navigation }) {
       </View>
 
       <View style={styles.buttonBox}>
-        <TouchableOpacity 
-          onPress={()=> navigation.navigate(
-            "AlunoFormulario", 
-            { date: selectedDate, time: selectedTime}
-          )} 
-          style={styles.button}>
-          <Text style={styles.buttonText}>Preencher formulário</Text>
-        </TouchableOpacity>
+        {selectedDate && selectedTime ? (
+          <TouchableOpacity
+            onPress={() =>
+              navigation.navigate("AlunoFormulario", {
+                date: selectedDate,
+                time: selectedTime,
+              })
+            }
+            style={styles.button}
+          >
+            <Text style={styles.buttonText}>Preencher formulário</Text>
+          </TouchableOpacity>
+        ) : (
+          <TouchableOpacity style={styles.disabledButton}>
+            <Text style={styles.disabledButtonText}>Selecione data e hora</Text>
+          </TouchableOpacity>
+        )}
       </View>
     </View>
   );
