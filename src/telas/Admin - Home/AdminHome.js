@@ -14,7 +14,7 @@ import { styles } from "./style";
 import Logo from "./../../../assets/logo.png";
 import Banner from "../../../assets/banner.png";
 import LogoUTF from "../../../assets/logoUTF.png";
-import IconPlus from "../../../assets/iconPlus.png"
+import IconPlus from "../../../assets/iconPlus.png";
 
 export default function AdminHome({ navigation }) {
   const [isModalVisible, setModalVisible] = useState(false);
@@ -78,7 +78,7 @@ export default function AdminHome({ navigation }) {
 
           <TouchableOpacity 
             style={styles.quadrasAdd}
-            onPress={() => navigation.navigate("AdminAdicionarQuadra")}
+            onPress={() => navigation.navigate("AdminAddQuadras")}
           > 
               <Image style={styles.iconPlus} source={IconPlus}/>
               <Text style={styles.quadraText}>Adicionar quadra</Text>
