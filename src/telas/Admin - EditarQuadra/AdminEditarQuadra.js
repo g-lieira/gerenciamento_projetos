@@ -33,12 +33,12 @@ export default function AdminAddQuadras({ navigation }) {
       <View style={styles.formBox}>
         <View style={styles.formItem}>
           <Text style={styles.formLabel}>Selecionar imagem</Text>
-          <View
+          <TouchableOpacity
             style={styles.addImage}
           >
             <Image style={styles.bannerQuadraImg} source={BannerQuadra} />
             <AntDesign style={styles.editImage} name="edit" size={30} color="#FFF" />
-          </View>
+          </TouchableOpacity>
         </View>
 
         <View style={styles.formItem}>
