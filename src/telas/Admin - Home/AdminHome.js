@@ -71,7 +71,7 @@ export default function AdminHome({ navigation }) {
 
 
         <View style={styles.quadrasBox}>
-          <TouchableOpacity style={styles.quadras}>
+          <TouchableOpacity onPress={()=> navigation.navigate("AdminHorariosQuadra")} style={styles.quadras}>
             <Image style={styles.logoUTF} source={LogoUTF} />
             <Text style={styles.quadraText}>Quadra Poliesportiva UTFPR-CP</Text>
           </TouchableOpacity>
