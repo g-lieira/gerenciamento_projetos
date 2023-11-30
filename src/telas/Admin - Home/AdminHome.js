@@ -14,7 +14,6 @@ import { styles } from "./style";
 import Logo from "./../../../assets/logo.png";
 import Banner from "../../../assets/banner.png";
 import LogoUTF from "../../../assets/logoUTF.png";
-import IconPlus from "../../../assets/iconPlus.png";
 
 export default function AdminHome({ navigation }) {
   const [isModalVisible, setModalVisible] = useState(false);
@@ -80,7 +79,7 @@ export default function AdminHome({ navigation }) {
             style={styles.quadrasAdd}
             onPress={() => navigation.navigate("AdminAddQuadras")}
           > 
-              <Image style={styles.iconPlus} source={IconPlus}/>
+              <AntDesign name="pluscircleo" size={25} color="black" />
               <Text style={styles.quadraText}>Adicionar quadra</Text>
           </TouchableOpacity>
         </View>

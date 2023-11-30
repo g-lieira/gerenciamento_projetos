@@ -11,8 +11,6 @@ import Modal from "react-native-modal";
 
 import { styles } from "./style";
 import Logo from "./../../../assets/logo.png";
-import iconNotCheck from "../../../assets/iconNotCheck.png";
-import iconCheck from "../../../assets/iconCheck.png";
 
 import "./style";
 
@@ -114,9 +112,9 @@ export default function AdminReservasPendentes({ navigation }) {
           </View>
           <View style={styles.responseRequest}>
             <TouchableOpacity onPress={toggleDenyModal} title="Fechar">
-                <Image source={iconNotCheck} />
+              <AntDesign name="closecircleo" size={25} color="red" />
             </TouchableOpacity>
-                <Image source={iconCheck} />
+              <AntDesign name="checkcircleo" size={25} color="green" />
           </View>
         </View>
 
@@ -145,7 +143,7 @@ export default function AdminReservasPendentes({ navigation }) {
           </View>
           <View style={styles.responseRequest}>
             <TouchableOpacity onPress={toggleDenyModal} title="Fechar">
-                <Image source={iconNotCheck} />
+              <AntDesign name="closecircleo" size={25} color="red" />
             </TouchableOpacity>
             <Modal
                 animationIn={"fadeIn"}
@@ -201,7 +199,7 @@ export default function AdminReservasPendentes({ navigation }) {
                 </View>
             </Modal>
                 
-                <Image source={iconCheck} />
+              <AntDesign name="checkcircleo" size={25} color="green" />
           </View>
         </View>
       </View>

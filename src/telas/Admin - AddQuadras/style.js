@@ -90,7 +90,7 @@ export const styles = StyleSheet.create({
   formDropBox: {
     color: 'black', 
     width: 150,
-    borderColor:'none',
+    borderColor:'white',
     backgroundColor: '#ECECEC',
   },
 

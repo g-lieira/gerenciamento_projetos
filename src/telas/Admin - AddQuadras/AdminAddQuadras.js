@@ -6,7 +6,6 @@ import {
   AntDesign,
 } from "@expo/vector-icons";
 
-import IconPlus from "../../../assets/iconPlus.png";
 
 import { styles } from "./style";
 import estados from "./Estados_Campus";
@@ -40,7 +39,7 @@ export default function AdminAddQuadras({ navigation }) {
           <TouchableOpacity
             style={styles.addImage}
           >
-            <Image source={IconPlus}/>
+            <AntDesign name="pluscircleo" size={25} color="black" />
           </TouchableOpacity>
         </View>
 
