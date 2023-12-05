@@ -5,7 +5,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { styles } from "./style";
 import BannerQuadra from "./../../../assets/bannerQuadra.png";
 
-export default function AlunoHorariosQuadra({ navigation }) {
+export default function AdminHorariosQuadra({ navigation }) {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
 
@@ -111,11 +111,11 @@ export default function AlunoHorariosQuadra({ navigation }) {
           <TouchableOpacity
             style={[
               styles.timeItem,
-              selectedTime === "12:00" && { backgroundColor: "#FCE762" },
+              selectedTime === "14:00" && { backgroundColor: "#FCE762" },
             ]}
-            onPress={() => handleTimeClick("12:00")}
+            onPress={() => handleTimeClick("14:00")}
           >
-            <Text style={styles.dataText}>12:00</Text>
+            <Text style={styles.dataText}>14:00</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[
@@ -151,7 +151,7 @@ export default function AlunoHorariosQuadra({ navigation }) {
         {selectedDate && selectedTime ? (
           <TouchableOpacity
             onPress={() =>
-              navigation.navigate("AlunoFormulario", {
+              navigation.navigate("AdminFormulario", {
                 date: selectedDate,
                 time: selectedTime,
               })

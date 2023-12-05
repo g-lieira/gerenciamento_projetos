@@ -108,47 +108,47 @@ export default function AlunoHorariosQuadra({ navigation }) {
           <TouchableOpacity
             style={[
               styles.timeItem,
-              selectedTime === "03/12" && { backgroundColor: "#FCE762" },
+              selectedTime === "14:00" && { backgroundColor: "#FCE762" },
             ]}
-            onPress={() => handleTimeClick("03/12")}
+            onPress={() => handleTimeClick("14:00")}
           >
-            <Text style={styles.dataText}>03/12</Text>
+            <Text style={styles.dataText}>14:00</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[
               styles.timeItem,
-              selectedTime === "04/12" && { backgroundColor: "#FCE762" },
+              selectedTime === "15:00" && { backgroundColor: "#FCE762" },
             ]}
-            onPress={() => handleTimeClick("04/12")}
+            onPress={() => handleTimeClick("15:00")}
           >
-            <Text style={styles.dataText}>04/12</Text>
+            <Text style={styles.dataText}>15:00</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[
               styles.timeItem,
-              selectedTime === "05/12" && { backgroundColor: "#FCE762" },
+              selectedTime === "19:00" && { backgroundColor: "#FCE762" },
             ]}
-            onPress={() => handleTimeClick("05/12")}
+            onPress={() => handleTimeClick("19:00")}
           >
-            <Text style={styles.dataText}>05/12</Text>
+            <Text style={styles.dataText}>19:00</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[
               styles.timeItem,
-              selectedTime === "06/12" && { backgroundColor: "#FCE762" },
+              selectedTime === "23:00" && { backgroundColor: "#FCE762" },
             ]}
-            onPress={() => handleTimeClick("06/12")}
+            onPress={() => handleTimeClick("23:00")}
           >
-            <Text style={styles.dataText}>06/12</Text>
+            <Text style={styles.dataText}>23:00</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[
               styles.timeItem,
-              selectedTime === "07/12" && { backgroundColor: "#FCE762" },
+              selectedTime === "01:00" && { backgroundColor: "#FCE762" },
             ]}
-            onPress={() => handleTimeClick("07/12")}
+            onPress={() => handleTimeClick("01:00")}
           >
-            <Text style={styles.dataText}>07/12</Text>
+            <Text style={styles.dataText}>01:00</Text>
           </TouchableOpacity>
         </ScrollView>
       </View>

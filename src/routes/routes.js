@@ -18,6 +18,8 @@ import AdminAddSucesso from '../telas/Admin - AddSucesso/AdminAddSucesso';
 import AdminReservasPendentes from '../telas/Admin - ReservasPendentes/AdminReservasPendentes';
 import AdminHorariosQuadra from '../telas/Admin - HorariosQuadra/AdminHorariosQuadra';
 import AdminEditarQuadra from '../telas/Admin - EditarQuadra/AdminEditarQuadra';
+import AdminFormulario from '../telas/Admin - Formulário/AdminFormulario';
+import AdminEnvioSucesso from '../telas/Admin - EnvioSucesso/AdminEnvioSucesso';
 
 const Stack = createNativeStackNavigator();
 
@@ -47,6 +49,8 @@ export default function Routes() {
         <Stack.Screen name="AdminReservasPendentes" component={AdminReservasPendentes} />
         <Stack.Screen name="AdminHorariosQuadra" component={AdminHorariosQuadra} />
         <Stack.Screen name="AdminEditarQuadra" component={AdminEditarQuadra} /> 
+        <Stack.Screen name="AdminFormulario" component={AdminFormulario} />
+        <Stack.Screen name="AdminEnvioSucesso" component={AdminEnvioSucesso} />
 
         <Stack.Screen name="Regulamento" component={Regulamento} />
         <Stack.Screen name="Feedback" component={Feedback} />
